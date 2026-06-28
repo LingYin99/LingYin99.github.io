@@ -10,7 +10,7 @@
   --card: #ffffff;
   --shadow: 0 12px 32px rgba(31, 48, 64, 0.09);
   --serif: Georgia, Cambria, "Times New Roman", serif;
-  --sans: "Trebuchet MS", "Segoe UI", sans-serif;
+  --sans: Arial, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 * {
