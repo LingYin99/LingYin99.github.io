@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open-source models for human mobility, epidemic transmission, and epidemic-control optimization from Professor Ling Yin's research group.">
+  <title>Open-Source Models | Ling Yin</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Ling Yin <span>Academic Homepage</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <div class="nav-links">
+        <a href="index.html#profile">Profile</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="models.html" aria-current="page">Open Models</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <header class="models-hero">
+      <div class="section-kicker">Reusable Research Resources</div>
+      <h1>Open-Source Model Library</h1>
+      <p>Models and algorithms for human spatiotemporal behavior, infectious-disease transmission, and intelligent intervention optimization. Each entry includes a concise overview, a representative figure, a related paper, and the source-code repository.</p>
+    </header>
+
+    <section class="model-category" aria-labelledby="synthetic-title">
+      <h2 id="synthetic-title">Synthetic Population &amp; Trajectory Models</h2>
+      <p class="category-intro">Methods for constructing individual travel patterns and population-level spatiotemporal distributions as inputs for urban simulation and epidemic modeling.</p>
+      <div class="model-grid">
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/m-star.png" alt="M-STAR framework"></div>
+          <div class="model-body">
+            <span class="model-label">Human Mobility</span>
+            <h3>M-STAR</h3>
+            <p>M-STAR models human mobility through multi-scale spatiotemporal dependencies, supporting the characterization of intra-urban activity patterns and the generation of mobility scenarios.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://arxiv.org/abs/2512.07314" target="_blank" rel="noopener noreferrer">M-STAR: Multi-Scale Spatiotemporal Autoregression for Human Mobility Modeling</a></div>
+            <a class="model-github" href="https://github.com/YuxiaoLuo0013/M-STAR" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/traveller.png" alt="Traveller framework"></div>
+          <div class="model-body">
+            <span class="model-label">Trajectory Generation</span>
+            <h3>Traveller</h3>
+            <p>Traveller uses an autoregressive diffusion framework to learn individual travel patterns and generate behaviorally plausible trajectories for simulation and intervention testing.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://www.sciencedirect.com/science/article/pii/S1566253525008280" target="_blank" rel="noopener noreferrer">Traveller: Travel-Pattern Aware Trajectory Generation via Autoregressive Diffusion Models</a></div>
+            <a class="model-github" href="https://github.com/YuxiaoLuo0013/Traveller" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="model-category" aria-labelledby="transmission-title">
+      <h2 id="transmission-title">Epidemic Transmission Models</h2>
+      <p class="category-intro">Regional and individual-level approaches for representing population movement, contact structures, transmission dynamics, and intervention responses.</p>
+      <div class="model-grid">
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/metapopulation.png" alt="Metapopulation model illustration"></div>
+          <div class="model-body">
+            <span class="model-label">Regional Simulation</span>
+            <h3>Metapopulation Model</h3>
+            <p>The model divides a city into interconnected regions and combines interregional population movement with intraregional transmission to analyze spatial risk and region-level interventions.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://link.springer.com/article/10.1007/s43762-024-00132-2" target="_blank" rel="noopener noreferrer">Impact of Initial Outbreak Locations on Transmission Risk of Infectious Diseases in an Intra-Urban Area</a></div>
+            <a class="model-github" href="https://github.com/LingYin99/epidemic-models" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/agent-based-model.png" alt="Individual-level agent-based epidemic model"></div>
+          <div class="model-body">
+            <span class="model-label">Individual Simulation</span>
+            <h3>Agent-Based Model</h3>
+            <p>The individual-level model represents population attributes, spatial locations, contact structures, infection-state transitions, and behavioral responses to interventions.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0112" target="_blank" rel="noopener noreferrer">A Data Driven Agent-Based Model that Recommends Non-Pharmaceutical Interventions to Suppress COVID-19 Resurgence in Megacities</a></div>
+            <a class="model-github" href="https://github.com/LingYin99/epidemic-models" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="model-category" aria-labelledby="optimization-title">
+      <h2 id="optimization-title">Spatiotemporal Epidemic-Control Optimization</h2>
+      <p class="category-intro">Reinforcement-learning and hierarchical decision models that balance transmission suppression, intervention costs, and decision robustness across spatial and temporal scales.</p>
+      <div class="model-grid">
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/drl-epc-sto.png" alt="DRL_EPC_STO framework"></div>
+          <div class="model-body">
+            <span class="model-label">Deep Reinforcement Learning</span>
+            <h3>DRL_EPC_STO</h3>
+            <p>DRL_EPC_STO coordinates intervention intensity across regions and time periods while enforcing spatiotemporal orderliness, improving the efficiency of epidemic-control policies.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2431904" target="_blank" rel="noopener noreferrer">Deep-Reinforcement-Learning-Based Optimization for Intra-Urban Epidemic Control Considering Spatiotemporal Orderliness</a></div>
+            <a class="model-github" href="https://github.com/lexie1216/DRL_EPC_STO" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/hi-rice-epc.png" alt="Hi_RICE_EPC framework"></div>
+          <div class="model-body">
+            <span class="model-label">Hierarchical Control</span>
+            <h3>Hi_RICE_EPC</h3>
+            <p>Hi_RICE_EPC combines region-level and individual-level decisions to optimize large-scale mobility interventions while balancing epidemic suppression against intervention costs.</p>
+            <div class="model-paper"><strong>Related paper</strong><a href="https://www.sciencedirect.com/science/article/abs/pii/S0198971525000651" target="_blank" rel="noopener noreferrer">Architecting Urban Epidemic Defense: A Hierarchical Region-Individual Control Framework</a></div>
+            <a class="model-github" href="https://github.com/YuxiaoLuo0013/Hi_RICE_EPC" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-image"><img src="assets/images/models/incomplete-observations.png" alt="Epidemic control under incomplete observations framework"></div>
+          <div class="model-body">
+            <span class="model-label">Incomplete Information</span>
+            <h3>EpidemicControl-IncompleteObs</h3>
+            <p>This model addresses intervention optimization when the true epidemic state cannot be fully observed, producing robust policies under incomplete observations and uncertain information.</p>
+            <div class="model-paper"><strong>Related paper</strong><span> Epidemic Control under Incomplete Observations through Mechanistic State Reconstruction and Multi-Agent Learning (under review)</span></div>
+            <a class="model-github" href="https://github.com/xiangsiersheng-web/EpidemicControl-IncompleteObs" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Ling Yin · Open-Source Model Library</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
