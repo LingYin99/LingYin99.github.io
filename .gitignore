@@ -1,0 +1,6 @@
+# Local working drafts and source assets that should not be published.
+drafts/
+开发规划.md
+assets/images/profile/ling-yin.jpg
+assets/images/badges/*.svg
+assets/papers/re-identification-risk.pdf
